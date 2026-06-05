@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "Fira Code", ui-monospace, monospace;
+
+  --color-palm-50: #f0f7ff;
+  --color-palm-100: #dbeafe;
+  --color-palm-150: #bfdbfe;
+  --color-palm-200: #93c5fd;
+  --color-palm-600: #2563eb;
+  --color-palm-700: #1d4ed8;
+  --color-palm-750: #1e40af;
+  --color-palm-800: #1e3a8a;
+  --color-palm-850: #172554;
+  --color-palm-900: #0f172a;
+  --color-palm-950: #030712;
+
+  --color-amber-date-50: #fefcf3;
+  --color-amber-date-100: #fef3c7;
+  --color-amber-date-200: #fde68a;
+  --color-amber-date-500: #f59e0b;
+  --color-amber-date-600: #d97706;
+  --color-amber-date-650: #b45309;
+  --color-amber-date-700: #b45309;
+  --color-amber-date-800: #78350f;
+  --color-amber-date-850: #78350f;
+  --color-amber-date-900: #451a03;
+}
+
+/* Custom modern scrolls */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-palm-200);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-palm-600);
+}
+
+/* Beautiful custom prints */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-card {
+    border: 1px solid #ddd !important;
+    background: white !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Modul Kurma antara Agama dan Sains Modern",
+  "description": "Modul pembelajaran interaktif berbasis Problem Based Learning (PBL) abad 21 yang mengintegrasikan sains modern dan nilai keislaman pada topik buah kurma.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
